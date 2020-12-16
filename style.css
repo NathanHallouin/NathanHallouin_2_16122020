@@ -111,6 +111,7 @@ body {
     -moz-box-shadow: 2px 0px 19px -4px rgba(186,186,186,1);
     box-shadow: 2px 0px 19px -4px rgba(186,186,186,1);
     padding: 5px;
+    margin-bottom: 30px;
 }
 
 .result img {
