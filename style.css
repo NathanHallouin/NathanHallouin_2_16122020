@@ -1,0 +1,200 @@
+
+@font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway.ttf");
+}
+
+body {
+    font-family: Raleway, sans-serif;
+}
+
+.global-frame {
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+}
+
+.header-padding {
+    padding: 0 30px 0 30px;
+}
+
+.menubar {
+    display: flex;
+    width: 100%;
+    height: 95px;
+}
+
+.logo {
+    order: 1;
+}
+
+.signup-link {
+    order: 3;
+}
+
+.signup-link a {
+    display:block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu {
+    order: 2;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block ;
+    width: 162px;
+}
+
+.menu li a {
+    display:block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+/* Barre de recherche */
+
+.searchbar {
+    display: inline-block;
+}
+
+.searchbar input {
+    height: 36px; /*TODO : Voir pour taille*/
+    margin-right: 0;
+    margin-left: 0;
+    border-top: #F2F2F2 solid 1px;
+    border-bottom: #F2F2F2 solid 1px;
+}
+
+.searchbar button {
+    background-color: #0065FC;
+    border: none;
+    height: 36px; /*TODO : Voir pour taille*/
+    border-radius: 0 10px 10px 0;
+    margin-right: 0;
+    color: white;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+}
+
+/* Filtres */
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 15px 0 25px 0;
+}
+
+.filters p {
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.filter {
+    margin: 0 15px 0 15px;
+    border: 2px solid #F2F2F2;
+    border-radius: 50px;
+}
+
+.filter p {
+    font-size: 16px;
+}
+
+/* Barre d'information */
+
+.information {
+    display: flex;
+    align-items: center;
+    margin: 15px 0 30px 0;
+}
+
+.information-icon {
+    color: #0065FC;
+    font-size: 13px;
+    border: #d9d9d9 solid 1px;
+    border-radius: 100%;
+    padding: 6px 10px 6px 10px;
+    margin: 0 15px 0 0;
+}
+
+/* Content */
+
+.content {
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    float: left;
+    width: 61.1%;
+    padding: 0 0 30px 0;
+}
+
+.results {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.result {
+    width: 25%;
+    height: auto;
+    display: block;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    -webkit-box-shadow: 2px 0px 19px -4px rgba(186,186,186,1);
+    -moz-box-shadow: 2px 0px 19px -4px rgba(186,186,186,1);
+    box-shadow: 2px 0px 19px -4px rgba(186,186,186,1);
+    padding: 5px;
+}
+
+.result img {
+    width: 100%;
+    height: 114px;
+    border-radius: 10px 10px 0 0px;
+}
+
+.result h2 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.result h3 {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.trend {
+    padding: 0 15px 0 15px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    float: right;
+    margin-right: 30px;
+    width: 300px; /*TODO : revoir la taille*/
+}
+
+.trend h1 {
+    width: 100%;
+    float: left;
+}
+
+.fa-chart-line {
+    float: right;
+}
+
+/* Footer */
+
+/* Breakpoints */
+
