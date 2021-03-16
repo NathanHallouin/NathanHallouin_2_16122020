@@ -8,7 +8,6 @@ body {
     font-family: Raleway, sans-serif;
 }
 
-<<<<<<< HEAD
 .global-frame {
     max-width: 1600px;
     margin-right: auto;
@@ -40,35 +39,13 @@ header {
 }
 
 .signup-link a {
-=======
-/* Header */
-
-.menubar {
-    width: 100%;
-    height: 55px;
-}
-
-.logo {
-    float: left;
-}
-
-.signup {
-    float: right;
-}
-
-.signup a {
->>>>>>> 0a84bd137d8225f444d47be76a31d33b86cc8f0c
     display:block;
     text-decoration: none;
     text-align: center;
 }
 
 .menu {
-<<<<<<< HEAD
     order: 2;
-=======
-    float: right;
->>>>>>> 0a84bd137d8225f444d47be76a31d33b86cc8f0c
 }
 
 .menu ul {
@@ -88,13 +65,7 @@ header {
     color: black;
 }
 
-<<<<<<< HEAD
 /* Barre de recherche */
-=======
-.menu li a::after {
-    color: #0065FC;
-}
->>>>>>> 0a84bd137d8225f444d47be76a31d33b86cc8f0c
 
 .searchbar {
     display: inline-block;
@@ -119,7 +90,6 @@ header {
     font-weight: 600;
 }
 
-<<<<<<< HEAD
 /* Filtres */
 
 .filters {
@@ -154,18 +124,12 @@ header {
 }
 
 .information-icon {
-=======
-.fa-info {
->>>>>>> 0a84bd137d8225f444d47be76a31d33b86cc8f0c
     color: #0065FC;
     font-size: 13px;
     border: #d9d9d9 solid 1px;
     border-radius: 100%;
     padding: 6px 10px 6px 10px;
-<<<<<<< HEAD
     margin: 0 15px 0 0;
-=======
->>>>>>> 0a84bd137d8225f444d47be76a31d33b86cc8f0c
 }
 
 /* Content */
@@ -194,10 +158,6 @@ header {
     -moz-box-shadow: 2px 0px 19px -4px rgba(186,186,186,1);
     box-shadow: 2px 0px 19px -4px rgba(186,186,186,1);
     padding: 5px;
-<<<<<<< HEAD
-=======
-    margin-bottom: 30px;
->>>>>>> 0a84bd137d8225f444d47be76a31d33b86cc8f0c
 }
 
 .result img {
@@ -234,11 +194,7 @@ header {
     float: right;
 }
 
-<<<<<<< HEAD
 /* Footer */
 
 /* Breakpoints */
 
-=======
-/* Footer */
->>>>>>> 0a84bd137d8225f444d47be76a31d33b86cc8f0c
