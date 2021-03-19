@@ -14,7 +14,7 @@ body {
     margin-left: auto;
 }
 
-/* Header */
+/*--------------------Header--------------------*/
 
 header {
     width: 100%;
@@ -65,25 +65,49 @@ header {
     color: black;
 }
 
+/* Slogan */
+
+.slogan h1 {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
 /* Barre de recherche */
 
 .searchbar {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    margin: 30px 0 30px 0;
+}
+
+.searchbar-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 15px 0 0 15px;
+    width: 50px;
+    height: 50px;
 }
 
 .searchbar input {
-    height: 36px; /*TODO : Voir pour taille*/
-    margin-right: 0;
-    margin-left: 0;
+    height: 50px; /*TODO : Voir pour taille*/
     border-top: #F2F2F2 solid 1px;
     border-bottom: #F2F2F2 solid 1px;
+    border-left: none;
+    border-right: none;
+    width: 235px;
+    font-weight: 600;
+    font-size: 15px;
 }
 
 .searchbar button {
     background-color: #0065FC;
     border: none;
-    height: 36px; /*TODO : Voir pour taille*/
-    border-radius: 0 10px 10px 0;
+    height: 50px; /*TODO : Voir pour taille*/
+    border-radius: 0 15px 15px 0;
     margin-right: 0;
     color: white;
     font-family: Raleway, sans-serif;
@@ -95,8 +119,9 @@ header {
 .filters {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
     margin: 15px 0 25px 0;
+    height: 50px;
 }
 
 .filters p {
@@ -107,12 +132,29 @@ header {
 
 .filter {
     margin: 0 15px 0 15px;
-    border: 2px solid #F2F2F2;
+    border: 2px solid #d9d9d9;
     border-radius: 50px;
+    display: flex;
+    height: 50px;
+}
+
+.filter-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50px;
+    background-color: #deebff;
+    color: #0065fc;
+    margin-left: -4px;
 }
 
 .filter p {
     font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
 }
 
 /* Barre d'information */
@@ -132,7 +174,7 @@ header {
     margin: 0 15px 0 0;
 }
 
-/* Content */
+/*--------------------Content--------------------*/
 
 .content {
     background-color: #F2F2F2;
@@ -194,7 +236,6 @@ header {
     float: right;
 }
 
-/* Footer */
+/*--------------------Footer--------------------*/
 
-/* Breakpoints */
-
+/*--------------------Breakpoints--------------------*/
