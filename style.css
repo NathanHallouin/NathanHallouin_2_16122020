@@ -187,36 +187,70 @@ header {
     margin: 0 15px 0 0;
 }
 
-/*--------------------Content--------------------*/
+/*--------------------Main--------------------*/
+
+.main-padding {
+    padding: 0 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.results-trend-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 /* Tuiles */
 
+.tile {
+    transition: all .15s ease-in-out;
+    box-shadow: 2px 0px 19px -4px rgb(165, 165, 165);
+}
 
+.tile:hover {
+    box-shadow: 0px 0px 25px 10px rgba(186,186,186,0.3);
+    transform: scale(1.02);
+}
 
-.content {
+/*results-box*/
+
+.results-box-padding {
+    padding: 0 30px 0 30px;
+}
+
+.results-box{
     background-color: #F2F2F2;
     border-radius: 15px;
     float: left;
     width: 61.1%;
     padding: 0 0 30px 0;
+    flex-grow: 1;
+    margin-right: 30px;
 }
 
-.results {
+.results-box-title {
+    height: 90px;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.results-box-content {
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .result {
-    width: 25%;
     height: auto;
     display: block;
     background-color: #FFFFFF;
     border-radius: 15px;
-    -webkit-box-shadow: 2px 0px 19px -4px rgba(186,186,186,1);
-    -moz-box-shadow: 2px 0px 19px -4px rgba(186,186,186,1);
     box-shadow: 2px 0px 19px -4px rgba(186,186,186,1);
     padding: 5px;
+    width: 350px;
 }
 
 .result img {
@@ -235,29 +269,31 @@ header {
     font-weight: 500;
 }
 
-.trend {
+.trends-box {
     padding: 0 15px 0 15px;
     background-color: #F2F2F2;
     border-radius: 15px;
     float: right;
-    margin-right: 30px;
-    width: 300px; /*TODO : revoir la taille*/
+    width: 300px;
 }
 
-.trend h1 {
+.trends-box-title {
     width: 100%;
-    float: left;
-}
-
-.fa-chart-line {
-    float: right;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 /*--------------------Footer--------------------*/
 
 /*--------------------Breakpoints--------------------*/
 
-@media (max-width: 980px) {
+@media (max-width: 1095px) {
+    /* Header */
+
     .signup-link {
         order: 1;
         position: absolute;
@@ -272,5 +308,20 @@ header {
 
     .searchbar {
         width: 100%;
+    }
+
+    /* Main */
+
+    .results-trend-block {
+        flex-direction: column;
+    }
+
+    .trend {
+        width: 100%;
+        order: 1;
+    }
+
+    .results-box {
+        order: 2;
     }
 }
