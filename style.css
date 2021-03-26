@@ -206,6 +206,8 @@ header {
 .tile {
     transition: all .15s ease-in-out;
     box-shadow: 2px 0px 19px -4px rgb(165, 165, 165);
+    border-radius: 15px;
+    background-color: #FFFFFF;
 }
 
 .tile:hover {
@@ -213,7 +215,12 @@ header {
     transform: scale(1.02);
 }
 
-/*results-box*/
+.tile-title {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Results-Box */
 
 .results-box-padding {
     padding: 0 30px 0 30px;
@@ -240,17 +247,17 @@ header {
 .results-box-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
 }
 
-.result {
-    height: auto;
+/* Result Tile */
+
+.result-tile {
     display: block;
-    background-color: #FFFFFF;
-    border-radius: 15px;
-    box-shadow: 2px 0px 19px -4px rgba(186,186,186,1);
     padding: 5px;
-    width: 350px;
+    width: 30%;
+    margin: 15px 0 15px 0;
 }
 
 .result img {
@@ -259,22 +266,21 @@ header {
     border-radius: 10px 10px 0 0px;
 }
 
-.result h2 {
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.result h3 {
-    font-size: 12px;
-    font-weight: 500;
-}
+/* Trends */
 
 .trends-box {
-    padding: 0 15px 0 15px;
     background-color: #F2F2F2;
     border-radius: 15px;
     float: right;
-    width: 300px;
+    width: 420px;
+    display: flex;
+}
+
+.trends-box-padding {
+    padding: 0 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .trends-box-title {
@@ -287,9 +293,26 @@ header {
     font-size: 20px;
 }
 
+.trends-box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+/* Trend-tile */
+
+
+
 /*--------------------Footer--------------------*/
 
 /*--------------------Breakpoints--------------------*/
+
+@media (max-width: 1400px) {
+    .trends-box {
+        width: 300px;
+    }    
+}    
 
 @media (max-width: 1095px) {
     /* Header */
@@ -316,12 +339,32 @@ header {
         flex-direction: column;
     }
 
+    .trends-box {
+        width: 100%;
+        border-radius: unset;
+    }
+
     .trend {
         width: 100%;
         order: 1;
     }
 
     .results-box {
+        width: 100%;
+        margin-right: unset;
         order: 2;
+        background-color: #fff;
+    }
+
+    .results-box-content {
+        flex-direction: column;
+    }
+
+    .result-tile {
+        width: 100%;
+    }
+
+    .main-padding {
+        padding: unset;
     }
 }
