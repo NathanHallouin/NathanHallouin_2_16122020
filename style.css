@@ -314,6 +314,7 @@ header {
     display: block;
     width: 30%;
     margin: 15px 0 15px 0;
+    height: 200px;
 }
 
 .result-tile-padding {
@@ -445,10 +446,14 @@ header {
 
 .activity-tile-img {
     flex-grow: 1;
+    border-radius: 15px 15px 0 0;
 }
 
 .activity-tile-title {
     height: 55px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px 0 15px;
 }
 
 .activity-one, .activity-four {
@@ -457,6 +462,7 @@ header {
 
 .activity-two {
     height: 235px;
+    margin: 0 0 30px 0;
 }
 
 .activity-three, .activity-six {
@@ -465,9 +471,48 @@ header {
 
 .activity-five {
     height: 195px;
+    margin: 0 0 30px 0;
 }
 
 /*--------------------Footer--------------------*/
+
+footer {
+    height: 215px;
+    background-color: #f2f2f2;
+}
+
+.footer-frame {
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 215px;
+}
+
+.footer-padding {
+    display: flex;
+    padding: 45px 35px 0 35px;
+}
+
+.footer-menu {
+    width: 33%;
+}
+
+.footer-menu h2 {
+    font-weight: 700;
+}
+
+.footer-menu ul li {
+    margin: 15px 0 15px 0;
+}
+
+.footer-menu ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+    color: #0065FC;
+}
 
 /*--------------------Breakpoints--------------------*/
 
@@ -541,17 +586,54 @@ header {
         flex-direction: column;
     }
 
-    .result-tile {
+    .main-padding {
+        padding: unset;
+    }
+
+    .activities-box-padding {
+        padding: 0 35px 30px 35px;
+    }
+
+    .activities-box-content {
+        height: unset;
+        flex-direction: column;
+    }
+
+    .activities-column {
         width: 100%;
     }
 
-    .main-padding {
-        padding: unset;
+    .tile {
+        width: 100%;
+    }
+
+    .activity-tile {
+        height: 190px;
+        margin: 15px 0 15px 0;
     }
 }
 
 @media (max-width: 975px) {
     .filters-title {
         width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    footer {
+        height: unset;
+    }
+
+    .footer-frame {
+        height: unset;
+    }
+
+    .footer-padding {
+        flex-direction: column;
+    }
+
+    .footer-menu {
+        width: 100%;
+        margin: 0 0 35px 0;
     }
 }
