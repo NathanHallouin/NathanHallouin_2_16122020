@@ -427,7 +427,7 @@ header {
 .activities-box-content {
     display: flex;
     justify-content: space-between;
-    height: 505px;
+    height: 445px;
 }
 
 .activities-column {
@@ -450,6 +450,7 @@ header {
 }
 
 .activity-tile-title {
+    line-height: 55px;
     height: 55px;
     display: flex;
     align-items: center;
@@ -465,13 +466,17 @@ header {
     margin: 0 0 30px 0;
 }
 
-.activity-three, .activity-six {
-    flex-grow: 1;
+.activity-three {
+    height: 165px;
 }
 
 .activity-five {
     height: 195px;
     margin: 0 0 30px 0;
+}
+
+.activity-six {
+    height: 205px;
 }
 
 /*--------------------Footer--------------------*/
